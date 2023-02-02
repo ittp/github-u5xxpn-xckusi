@@ -11,9 +11,9 @@ export default function UserPage() {
     fetcher
   )
 
-  if (error) return <div>Failed to load user</div>
+  if (error) return <div>Failed to load router</div>
   if (isLoading) return <div>Loading...</div>
   if (!data) return null
 
-  return <div>{data.name}</div>
+  return <div>{data.ip}</div>
 }
